@@ -1,5 +1,4 @@
 'use strict'
-import { doesNotThrow } from 'assert'
 import { NightwatchBrowser } from "nightwatch"
 import init from '../helpers/init'
 import sauce from './sauce'
