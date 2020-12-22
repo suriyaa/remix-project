@@ -58,16 +58,16 @@ export const TxBrowser = ({ requestDebug, unloadRequested, transactionNumber, de
           />
         </div>
         <div className="d-flex justify-content-center w-100 btn-group py-1">
-        <button
-          className="btn btn-primary btn-sm txbutton"
-          id="load"
-          title={debugging ? 'Stop debugging' : 'Start debugging'}
-          onClick={handleSubmit}
-          data-id="debuggerTransactionStartButton"
-          disabled={!state.txNumber ? true : false }
-        >
-          { debugging ? 'Stop' : 'Start' } debugging
-        </button>
+          <button
+            className="btn btn-primary btn-sm txbutton"
+            id="load"
+            title={debugging ? 'Stop debugging' : 'Start debugging'}
+            onClick={handleSubmit}
+            data-id="debuggerTransactionStartButton"
+            disabled={!state.txNumber ? true : false }
+          >
+            { debugging ? 'Stop' : 'Start' } debugging
+          </button>
         </div>
       </div>
       <span id='error'></span>
